@@ -3,18 +3,15 @@ public class Trip
 {
 	private int miles;
 	private int gallons;
-	private double mpg;
 	public Trip()
 	{
 		this.miles = 0;
 		this.gallons = 0;
-		this.mpg = 0.0;
 	}
-	public Trip(int miles, int gallons, double mpg)
+	public Trip(int miles, int gallons)
 	{
 		this.miles = miles;
 		this.gallons = gallons;
-		this. mpg = mpg;
 	}
 	public void setMiles(int miles)
 	{
@@ -32,16 +29,9 @@ public class Trip
 	{
 		return gallons;
 	}
-	public void setMpg(double mpg)
+	public double mpg()
 	{
-		this.mpg = mpg;
-	}
-	public double getMpg()
-	{
+		double mpg = (double)miles/gallons;
 		return mpg;
-	}
-	public void mpg()
-	{
-		mpg = miles/gallons;
 	}
 }
