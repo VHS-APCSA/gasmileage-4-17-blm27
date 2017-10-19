@@ -12,15 +12,24 @@ public class GasMileage
 	}
 	public double gasMileage()
 	{
-		int tmiles = 0;
-		int tgallons = 0;
-		For(Trip gas : list)
+		int tMiles = 0;
+		int tGallons = 0;
+		
+		for(Trip trip : gas)
 		{
-			tmiles = 
-			tgallons = 
+			tMiles += trip.getMiles();
+			tGallons += trip.getGallons();
+		}
+		return (double)tMiles/tGallons;
+	}
+	public void clearTrips()
+	{
+		int index = 0;
+		while(index <gas.size())
+		{
+			gas.remove(index);
 		}
 	}
-	
 	
 	
 	

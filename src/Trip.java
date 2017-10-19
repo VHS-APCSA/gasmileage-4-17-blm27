@@ -1,4 +1,3 @@
-
 public class Trip 
 {
 	private int miles;
