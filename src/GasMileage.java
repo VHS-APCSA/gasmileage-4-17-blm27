@@ -30,6 +30,5 @@ public class GasMileage
 			gas.remove(index);
 		}
 	}
-	
 }
 
