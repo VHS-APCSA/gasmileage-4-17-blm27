@@ -12,14 +12,15 @@ public class TripRunner
 			System.out.println("Enter miles and then gallons." + "Enter -1 to quit loop.\n");
 			miles = input.nextInt();
 			gallons = input.nextInt();
+			input.nextLine();
 			if(miles >= 0)
 			{
 				gas.addTrip(new Trip(miles, gallons));
 				System.out.println((double)miles/gallons);
 			}
 		}
-		System.out.println(gas);
-		
-		
+		System.out.println(gas.gasMileage());
+		gas.clearTrips();
+		System.out.println(gas.gasMileage());
 	}
 }
