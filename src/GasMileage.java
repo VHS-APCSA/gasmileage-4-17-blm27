@@ -35,12 +35,13 @@ public class GasMileage
     {
         String str = "";
 
-        for(Trip trip : gas) {
+        for(Trip trip : gas) 
+        {
             int totalMiles = trip.getMiles();
             int totalGallons = trip.getGallons();
 
             str += (((double) totalMiles)/totalGallons) + "\n";
-    }
+        }
         return str;
     }
 }
