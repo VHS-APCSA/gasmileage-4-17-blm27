@@ -12,7 +12,7 @@ public class GasMileage
 	}
 	public double gasMileage()
 	{
-		int tMiles = 0;
+		int tMiles = 0; 
 		int tGallons = 0;
 		
 		for(Trip trip : gas)
