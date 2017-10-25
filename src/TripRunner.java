@@ -9,18 +9,19 @@ public class TripRunner
 		int gallons = 0;
 		while(miles >= 0 )
 		{
-			System.out.println("Enter miles and then gallons." + "Enter -1 to quit loop.\n");
+			System.out.println("Enter miles and then gallons." + "Enter -1 to quit loop.");
 			miles = input.nextInt();
 			gallons = input.nextInt();
-			input.nextLine();
 			if(miles >= 0)
 			{
 				gas.addTrip(new Trip(miles, gallons));
 				System.out.println((double)miles/gallons);
 			}
 		}
-		System.out.println(gas.gasMileage());
+		System.out.println("Total miles/gallons: \n" + gas.gasMileage() + "\n");
+		System.out.println("The list of miles/gallons: \n" + gas + "\n");
 		gas.clearTrips();
-		System.out.println(gas.gasMileage());
+		System.out.println(gas);
+
 	}
 }

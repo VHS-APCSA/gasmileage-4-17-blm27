@@ -30,5 +30,18 @@ public class GasMileage
 			gas.remove(index);
 		}
 	}
+	@Override
+    public String toString() 
+    {
+        String str = "";
+
+        for(Trip trip : gas) {
+            int totalMiles = trip.getMiles();
+            int totalGallons = trip.getGallons();
+
+            str += (((double) totalMiles)/totalGallons) + "\n";
+    }
+        return str;
+    }
 }
 
